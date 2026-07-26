@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { AUTHOR_NAME, AUTHOR_DESCRIPTION, AUTHOR_AVATAR, SKILLS, SOCIAL_LINKS } from '../constants/site';
+import { AUTHOR_NAME, AUTHOR_DESCRIPTION, AUTHOR_AVATAR, SKILLS, SOCIAL_LINKS, SITE_URL } from '../constants/site';
 import { getFeaturedBlogPosts } from '../utils/blog';
 import { Metadata } from 'next';
 
@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Trang Chủ | Trang Web Cá Nhân',
     description: 'Trang web cá nhân với các bài viết blog về phát triển web, lập trình AI và công nghệ hiện đại',
-    url: '/',
+    url: `${SITE_URL}/`,
     images: [{
-      url: '/images/og-home.jpg',
+      url: `${SITE_URL}/images/og-image.jpg`,
       width: 1200,
       height: 630,
       alt: 'Trang Chủ'
